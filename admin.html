@@ -251,7 +251,7 @@ async function connectGH(){
       document.getElementById("statusNotice").className = "notice green";
       document.getElementById("statusNotice").textContent = "✅ GitHub 연결됨. 변경 후 [GitHub에 저장] 버튼을 누르세요.";
       document.getElementById("pushBtn").disabled = false;
-      var content = JSON.parse(atob(data.content.split("\n").join("")));
+      var content = JSON.parse(decodeURIComponent(escape(atob(data.content.split("\n").join("")))));
       GH.sha = data.sha;
       proj = content.projects || JSON.parse(JSON.stringify(DP.projects));
       ab   = content.about    || JSON.parse(JSON.stringify(DP.about));
