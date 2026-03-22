@@ -561,12 +561,14 @@
     {
       "key": "lighting_tool",
       "title": "LIGHTING TOOL",
-      "company": "",
+      "company": "개인작업",
       "period": "",
       "platform": "Tool Development",
       "cat": "ingame",
       "thumb": "",
-      "duties": [],
+      "duties": [
+        "라이팅에 필요한 단축키 및 노출 알베도값 확인을 간편화하는게 목적."
+      ],
       "media": [],
       "modalTags": [
         "Tool Development",
